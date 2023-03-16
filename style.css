@@ -1,0 +1,133 @@
+@font-face {
+    font-family: antre;
+    src: url(/assets/antre.otf);
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(81, 62, 150);
+}
+
+
+.main-logo{
+    margin: auto;
+    color: white;
+    border-radius: 100%;
+    border: solid 4px white;
+    padding: 20px; 
+    width: 130px;
+    height: 130px; 
+    text-align: center;
+    position: relative;
+    margin-bottom: 10vh;
+}
+
+.main-logo-dream{
+    color: white;
+    font-weight: 100;
+    font-size: 2em;
+    font-family: antre;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* index.html */
+
+.login-wait-container{
+    padding: 25vh 0;
+}
+
+.main-logo-worshipers{
+    color: white;
+    font-weight: 100;
+    font-size: 1em;
+    font-family: antre;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.login-form{
+    margin: auto;
+    text-align: center;
+    height: fit-content;
+    border: solid 3px white;
+    width: fit-content;
+    border-radius: 50em;
+}
+
+.usercode{
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    border-color: transparent;
+    width: 200px;
+    height: 45px;
+}
+
+.usercode::placeholder{
+    color: rgba(255, 255, 255, .8);
+}
+
+.usercode:focus, .usercode:active, .usercode:hover{
+    outline: none;
+    color: white;
+}
+
+.usercode-submit{
+    background-color: white;
+    color: rgb(81, 62, 150);
+    font-size: 1.5em;
+    border-color: transparent;
+    border-top-right-radius: 50em;
+    border-bottom-right-radius: 50em;
+    width: 120px;
+    height: 52px;
+}
+
+/* wait.html */
+
+.main-logo{
+    border: none;
+    margin-bottom: 5vh;
+}
+
+.loader {
+    border: 4px solid #f3f3f3; 
+    border-top: 6px solid rgb(81, 62, 150); 
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    animation: spin 2s linear infinite;
+    margin-top: -19%;
+    margin-left: -18%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.no-leader-notice {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 0 50px 50px 50px;
+}
+
+.leader-form {
+    margin: auto;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
